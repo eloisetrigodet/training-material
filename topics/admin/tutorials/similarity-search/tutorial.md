@@ -1,6 +1,6 @@
 ---
 layout: tutorial_hands_on
-topic_name: your_topic
+topic_name: salut
 tutorial_name: your_tutorial_name
 ---
 
