@@ -4,25 +4,10 @@ topic_name: STOC eps abondance occurrences
 tutorial_name: STOCeps
 ---
 ![STOCeps](/Users/trigodeteloise/Desktop/téléchargement.png)
-
-  > ### :bulb: Tip: Importing data via links
-  >
-  > * Copy the link location
-  > * Open the Galaxy Upload Manager
-  > * Select **Paste/Fetch Data**
-  > * Paste the link into the text field
-  > * Press **Start**
-  {: .tip}
-
-  > ### :nut_and_bolt: Comments
-  > - Edit the "Database/Build" to select "dm3"
-  > - Rename the datasets according to the samples
-  {: .comment}
   
 # Introduction
-{:.no_toc}
 
-General introduction about the topic and then an introduction of the tutorial (the questions and the objectives). It is nice also to have a scheme to sum up the pipeline used during the tutorial. The idea is to give to trainees insight into the content of the tutorial and the (theoretical and technical) key concepts they will learn.
+Le programme STOCeps (Suivi Temporel Oiseaux Communs_Echantillonnages Ponctuels Simples) est conçu pour évaluer les variations spatiales et temporelles de l’abondance des populations nicheuses d’oiseaux communs. Il est basé sur des points d’écoute.
 
 > ### Agenda
 >
@@ -108,8 +93,3 @@ Short introduction about this subpart.
 >
 > Do you want to learn more about the principles behind mapping? Follow our [training](../../NGS-mapping)
 > {: .comment}
-
-# Conclusion
-{:.no_toc}
-
-Conclusion about the technical key points. And then relation between the technics and the biological question to end with a global view.
