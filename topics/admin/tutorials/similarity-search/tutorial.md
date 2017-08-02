@@ -50,38 +50,12 @@ Short introduction about this subpart.
 >
 > 1. Step1
 > 2. Step2
->
->    > ### :question: Question
->    >
->    > Question?
->    >
->    > <details>
->    > <summary>Click to view answers</summary>
->    > Answer to question
->    > </details>
->    {: .question}
-{: .hands_on}
 
 Some blabla
 > ### :pencil2: Hands-on: Data upload
 >
 > 1. Step1
 > 2. Step2
->
->    > ### :question: Questions
->    >
->    > 1. Question1?
->    > 2. Question2?
->    >
->    >    <details>
->    >    <summary>Click to view answers</summary>
->    >    <ol type="1">
->    >    <li>Answer for question1</li>
->    >    <li>Answer for question2</li>
->    >    </ol>
->    >    </details>
->    {: .question}
->
 > 3. Step3
 {: .hands_on}
 
