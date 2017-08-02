@@ -5,6 +5,20 @@ tutorial_name: STOCeps
 ---
 ![STOCeps](/Users/trigodeteloise/Desktop/téléchargement.png)
 
+  > ### :bulb: Tip: Importing data via links
+  >
+  > * Copy the link location
+  > * Open the Galaxy Upload Manager
+  > * Select **Paste/Fetch Data**
+  > * Paste the link into the text field
+  > * Press **Start**
+  {: .tip}
+
+  > ### :nut_and_bolt: Comments
+  > - Edit the "Database/Build" to select "dm3"
+  > - Rename the datasets according to the samples
+  {: .comment}
+  
 # Introduction
 {:.no_toc}
 
