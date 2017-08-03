@@ -73,57 +73,59 @@ steps:
     ---  | ---
     `title`  | En-tête de chaque conteneur-étape
     `content` | Texte qui s'affiche à l'utilisateur
-    `element` | [JQuery Selector](https://api.jquery.com/category/selectors/) of the element you want to describe / click
-    `placement` | Placement of the text box relative to the selected element
-    `preclick` or `postclick` | Elements that recieve a click() event before (`preclick`) or after (`postclick`) the step is shown
-    `textinsert` | Text to insert if element is a text box (e.g. tool search or upload)
-    `backdrop` | `true/false`:  Show a dark backdrop behind the popover and its element, highlighting the current step
+    `element` | [JQuery Selector](https://api.jquery.com/category/selectors/) de l'élément que vous voulez décrire / click
+    `placement` | Placement de la zone de texte par rapport à l'élément sélectionné
+    `preclick` or `postclick` | Les éléments qui reçoivent un événement click () avant (`preclick`) ou après (` postclick`), l'étape est affichée
+    `textinsert` | Pour insérer une zone de texte (ex recherche d'outils ou téléchargement)
+    `backdrop` | `true/false`:  Affichez un fond sombre derrière le popover et son élément, mettant en évidence l'étape 
+     actuelle
+     
+    [Référence complète des propriétés](https://bootstraptour.com/api/)
 
-    [Full reference of the properties](https://bootstraptour.com/api/)
+Le fichier YAML d'une visite peut être intégré dans une instance Galaxy en le plaçant dans le répertoire `config / plugins / tours` du code Galaxy et en redémarrant l'instance Galaxy.
 
-The YAML file of a tour can be integrated in a Galaxy instance by placing the YAML file in the `config/plugins/tours` directory of the Galaxy code and restarting the Galaxy instance
+# Créer un tour interactif Galaxy
 
-# Creating a Galaxy Interactive Tour
-
-[A Web browser plugin](https://github.com/TailorDev/galaxy-tourbuilder) is available to help the creation and the test (on the fly) of an interactive tour.
+[Un plugin de navigateur Web](https://github.com/TailorDev/galaxy-tourbuilder) est disponible pour aider à la création et au test d'un tour interactif.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/0YVvz"><a href="//imgur.com/a/0YVvz">Galaxy Tour Builder by TailorDev</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-> ### :pencil2: Hands-on: Install and start the plugin
+> ### :pencil2: Hands-on: Installer et démarrer le plugin
 >
-> 1. Install [node.js](https://nodejs.org/en/)
-> 2. Clone the [plugin GitHub repository](https://github.com/TailorDev/galaxy-tourbuilder)
-> 3. Run `npm install`
-> 4. Run `npm run build`
-> 5. Load the extension in your Web browser
->    - Load the extension in Chrome & Opera
->       - Open Chrome/Opera browser and navigate to chrome://extensions
->       - Select "Developer Mode" and then click "Load unpacked extension..."
->       - From the file browser, choose to `galaxy-tourbuilder/build/chrome` or (`galaxy-tourbuilder/build/opera`)
->    - Load the extension in Firefox
->       - Open Firefox browser and navigate to about:debugging
->       - Click "Load Temporary Add-on" and from the file browser, choose `galaxy-tourbuilder/build/firefox`
-> 6. Load the webpage of any Galaxy instance
-> 7. Start the plugin by clicking on the icon on the right
+> 1. Installer [node.js](https://nodejs.org/en/)
+> 2. Cloner le [plugin GitHub repository](https://github.com/TailorDev/galaxy-tourbuilder)
+> 3. Lancer `npm install`
+> 4. Lancer `npm run build`
+> 5. Chargez l'extension dans votre navigateur web
+>    - Charger l'extension dans Chrome & Opera
+>       - Ouvrir Chrome/Opera et navigez avec chrome://extensions
+>       - Sélectionner "Developer Mode" et clickez sur "Load unpacked extension..."
+>       - Dans le navigateur de fichiers choisissez `galaxy-tourbuilder/build/chrome` ou (`galaxy-tourbuilder/build/opera`)
+>    - Charger l'extension dans Firefox
+>       - Ouvrir Firefox et naviguez avec about:debugging
+>       - Cliquez sur "Load Temporary Add-on" et à partir du navigateur de fichiers, choississez `galaxy 
+>         tourbuilder/build/firefox`
+> 6. Charger la page web de toute instance de Galaxy
+> 7. Démarrer le plugin en cliquant sur l'icône à droite
 {: .hands_on}
 
-We can now create easily a Galaxy Interactive Tour and test it on the fly.
+Nous pouvons maintenant créer facilement un tour interactif galaxy et le tester.
 
-> ### :pencil2: Hands-on: Create a Galaxy Interactive Tour
+> ### :pencil2: Hands-on: Créer un tour interactif galaxy
 >
-> 1. Create a Galaxy Interactive Tour for "BLAST" tutorial
-> 2. Test it with the plugin
-> 3. Copy the YAML content and add it to a file
-> 2. Add the file to the `tours` directory of the tutorial
-> 3. Test it on a local Galaxy instance
+> 1. Créez tour interactif Galaxy pour un tutoriel "BLAST"
+> 2. Testez le avec le plugin
+> 3. Copiez le contenu YAML et ajoutez le à un fichier
+> 2. Ajoutez le fichier au répertoire `tours` du tutoriel
+> 3. Le tester dans l'instance Galaxy local
 {: .hands_on}
 
 # Conclusion
 {:.no_toc}
 
-> ### Developing GTN training material
+> ### Développer du matériel de formation GTN
 >
-> This tutorial is part of a series to develop GTN training material, feel free to also look at:
+> Ce tutoriel fait partie d'une série pour développer du matériel de formation GTN, n'hésitez pas à consulter:
 >
 > 1. [Writing content in markdown](../create-new-tutorial-content/tutorial.html)
 > 1. [Defining metadata](../create-new-tutorial-metadata/tutorial.html)
