@@ -1,7 +1,7 @@
 ---
 layout: tutoriel de prise en mains
 topic_name: formation
-tutorial_name: créer un nouveau tutoriel de tour interactif
+tutorial_name: créer un nouveau tutoriel de circuit interactif
 ---
 
 # Introduction
@@ -11,12 +11,13 @@ Galaxy est une excellente solution pour former aux concepts de la bio-informatiq
 
 - de nombreux outils de bioinformatique sont disponibles (près de 5000 dans le ToolShed)
 - il peut être utilisé par des personnes qui n'ont pas de compétences particulières en informatique
-- il forme à utiliser ces outils, en décrivant les moyens et les efforts mis en oeuvre pour les rendre accessibles aux chercheurs
+- il forme à utiliser ces outils, en décrivant les moyens et les efforts mis en oeuvre pour les rendre accessibles aux 
+  chercheurs
 - il est évolutif
 
 En 2016, le galaxy Training Network décide de mettre en place une nouvelle infrastructure pour fournir facilement du matériel de formation Galaxy. L'idée était de développer quelque chose d'ouvert et en ligne basé sur un effort de la communauté, comme la plupart du temps dans Galaxy.
 
-Nous nous inspirons de [Software Carpentry](https://software-carpentry.org). Nous avons tout rassembler sur un répertoire GitHub: [https://github.com/galaxyproject/training-material ](https://github.com/galaxyproject/training-material). Nous avons choisi une structure basée sur des didacticiels pratiques adaptées à la fois à l'auto-apprentissage en ligne et aux ateliers regroupés en thèmes. Chaque tutoriel suit la même structure et dispose d'un support technique pour pouvoir s'exécuter.
+Nous nous inspirons de [Software Carpentry](https://software-carpentry.org). Nous avons tout rassembler sur un répertoire GitHub: [https://github.com/galaxyproject/training-material ](https://github.com/galaxyproject/training-material). Nous avons choisi une structure basée sur des tutoriels pratiques adaptées à la fois à l'auto-apprentissage en ligne et aux ateliers regroupés en thèmes. Chaque tutoriel suit la même structure et dispose d'un support technique pour pouvoir s'exécuter.
 
 Dans ce tutoriel, vous comprendrez comment concevoir et développer un nouveau tutoriel dans ce répertoire de matériel de formation.
 Comme cela aide à comprendre, nous développerons un petit tutoriel pour expliquer BLAST avec l'infrastructure complète pour pouvoir exécuter ce tutoriel n'importe où.
@@ -30,11 +31,11 @@ Comme cela aide à comprendre, nous développerons un petit tutoriel pour expliq
 >
 {: .agenda}
 
-# Un tout interactif sur Galaxy
+# Un circuit interactif sur Galaxy
 
-Un tour interactif sur Galaxy est un moyen de parcourir une analyse complète, étape par étape, à l'intérieur de Galaxy, d'une manière interactive et exploratoire pédagogique d'exécuter le didacticiel directement à l'intérieur de Galaxy. 
+Un circuit interactif sur Galaxy est un moyen de parcourir une analyse complète, étape par étape, à l'intérieur de Galaxy, d'une manière interactive et exploratoire pédagogique d'exécuter le didacticiel directement à l'intérieur de Galaxy. 
 
-![Demonstration d'un tour interactif](../../../dev/images/galaxy_tour_demo.gif "Demonstration d'un tour interactif")
+![Demonstration d'un circuit interactif](../../../dev/images/galaxy_tour_demo.gif "Demonstration d'un tour interactif")
 
 Un tour est un fichier YAML comme: 
 
@@ -46,9 +47,9 @@ title_default: "Bienvenue dans Galaxy"
 
 steps:
     - title: "Bienvenue dans Galaxy"
-      content: "Ce courThis short tour will guide you through Galaxy's user interface.<br>
-                Vous pouvez naviguer avec votre You can navigate with vos touches directionnelles et quitter le tour à  
-                nimporte quel moment avec 'échapper' ou le bouton 'fin de tour'.
+      content: "Ce cours circuit vous guidera dans l'interface utilisateur de Galaxy.<br>
+                Vous pouvez naviguer avec vos touches directionnelles et quitter le circuit à  
+                nimporte quel moment avec 'échapper' ou le bouton 'fin de circuit'.
       backdrop: vrai
 
     - title: "télécharger vos données"
@@ -60,10 +61,10 @@ steps:
         - ".upload-button"
 ```
 
-- en haut des métadonnées liées au tour:
-    - `id`: ID du tour
-    - `name`: nom du tour
-    - `description`: une courte description du tour
+- en haut des métadonnées liées au circuit:
+    - `id`: ID du circuit
+    - `name`: nom du circuit
+    - `description`: une courte description du circuit
     - `title_default`: un titre
 - plusieurs étapes correpondantes à différentes boites
 
@@ -75,7 +76,8 @@ steps:
     `content` | Texte qui s'affiche à l'utilisateur
     `element` | [JQuery Selector](https://api.jquery.com/category/selectors/) de l'élément que vous voulez décrire / click
     `placement` | Placement de la zone de texte par rapport à l'élément sélectionné
-    `preclick` or `postclick` | Les éléments qui reçoivent un événement click () avant (`preclick`) ou après (` postclick`), l'étape est affichée
+    `preclick` or `postclick` | Les éléments qui reçoivent un événement click () avant (`preclick`) ou après (` postclick`), 
+     l'étape est affichée
     `textinsert` | Pour insérer une zone de texte (ex recherche d'outils ou téléchargement)
     `backdrop` | `true/false`:  Affichez un fond sombre derrière le popover et son élément, mettant en évidence l'étape 
      actuelle
@@ -84,9 +86,9 @@ steps:
 
 Le fichier YAML d'une visite peut être intégré dans une instance Galaxy en le plaçant dans le répertoire `config / plugins / tours` du code Galaxy et en redémarrant l'instance Galaxy.
 
-# Créer un tour interactif Galaxy
+# Créer un circuit interactif Galaxy
 
-[Un plugin de navigateur Web](https://github.com/TailorDev/galaxy-tourbuilder) est disponible pour aider à la création et au test d'un tour interactif.
+[Un plugin de navigateur Web](https://github.com/TailorDev/galaxy-tourbuilder) est disponible pour aider à la création et au test d'un circuit interactif.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/0YVvz"><a href="//imgur.com/a/0YVvz">Galaxy Tour Builder by TailorDev</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
@@ -111,9 +113,9 @@ Le fichier YAML d'une visite peut être intégré dans une instance Galaxy en le
 
 Nous pouvons maintenant créer facilement un tour interactif galaxy et le tester.
 
-> ### :pencil2: Hands-on: Créer un tour interactif galaxy
+> ### :pencil2: Hands-on: Créer un circuit interactif galaxy
 >
-> 1. Créez tour interactif Galaxy pour un tutoriel "BLAST"
+> 1. Créez un circuit interactif Galaxy pour un tutoriel "BLAST"
 > 2. Testez le avec le plugin
 > 3. Copiez le contenu YAML et ajoutez le à un fichier
 > 2. Ajoutez le fichier au répertoire `tours` du tutoriel
@@ -127,10 +129,10 @@ Nous pouvons maintenant créer facilement un tour interactif galaxy et le tester
 >
 > Ce tutoriel fait partie d'une série pour développer du matériel de formation GTN, n'hésitez pas à consulter:
 >
-> 1. [Writing content in markdown](../create-new-tutorial-content/tutorial.html)
-> 1. [Defining metadata](../create-new-tutorial-metadata/tutorial.html)
-> 1. [Setting up the infrastructure](../create-new-tutorial-jekyll/tutorial.html)
-> 1. [Creating Interactive Galaxy Tours](../create-new-tutorial-tours/tutorial.html)
-> 1. [Building a Docker flavor](../create-new-tutorial-docker/tutorial.html)
-> 1. [Submitting the new tutorial to the GitHub repository](../../../dev/tutorials/github-contribution/slides.html)
+> 1. [Rédaction de contenu en Markdown](../create-new-tutorial-content/tutorial.html)
+> 1. [Définition des métadonnées](../create-new-tutorial-metadata/tutorial.html)
+> 1. [Configuration de l'infrastructure](../create-new-tutorial-jekyll/tutorial.html)
+> 1. [Création des circuits interactifs Galaxy](../create-new-tutorial-tours/tutorial.html)
+> 1. [Construire un Docker flavor](../create-new-tutorial-docker/tutorial.html)
+> 1. [Soumettre le nouveau tutoriel au dépôt GitHub](../../../dev/tutorials/github-contribution/slides.html)
 {: .agenda}
