@@ -39,40 +39,40 @@ Un tour interactif sur Galaxy est un moyen de parcourir une analyse complète, �
 Un tour est un fichier YAML comme: 
 
 ```
-id: galaxy_ui
-name: Galaxy UI
-description: A gentle introduction to the Galaxy User Interface
-title_default: "Welcome to Galaxy"
+id: galaxy_iu
+name: Galaxy IU
+description: Une introduction à l'interface utilisateur Galaxy
+title_default: "Bienvenue dans Galaxy"
 
 steps:
-    - title: "Welcome to Galaxy"
-      content: "This short tour will guide you through Galaxy's user interface.<br>
-                You can navigate with your arrow keys and leave the tour at any time point
-                with 'Escape' or the 'End tour' button."
-      backdrop: true
+    - title: "Bienvenue dans Galaxy"
+      content: "Ce courThis short tour will guide you through Galaxy's user interface.<br>
+                Vous pouvez naviguer avec votre You can navigate with vos touches directionnelles et quitter le tour à  
+                nimporte quel moment avec 'échapper' ou le bouton 'fin de tour'.
+      backdrop: vrai
 
-    - title: "Upload your data"
+    - title: "télécharger vos données"
       element: ".upload-button"
-      intro: "Galaxy supports many ways to get in your data.<br>
-              Use this button to upload your data."
-      position: "right"
+      intro: "Galaxy prend en charge de nombreuses façons d'obtenir vos données.<br>
+              Utiliser ce bouton pour télécharger vos données."
+      position: "droite"
       postclick:
         - ".upload-button"
 ```
 
-- at the top some etadata related to the Tour:
-    - `id`: ID of the tour
-    - `name`: name of the tour
-    - `description`: a short description of the tour
-    - `title_default`: a title
-- several steps corresponding to the different boxes
+- en haut des métadonnées liées au tour:
+    - `id`: ID du tour
+    - `name`: nom du tour
+    - `description`: une courte description du tour
+    - `title_default`: un titre
+- plusieurs étapes correpondantes à différentes boites
 
-    Each step is beginning with a dash `-` and with possible arguments
+   Chaque étape commence par un tiret `-` et avec des arguments possibles
 
     Argument | Description
     ---  | ---
-    `title`  | Header of each step-container
-    `content` | Text that is shown to the user
+    `title`  | En-tête de chaque conteneur-étape
+    `content` | Texte qui s'affiche à l'utilisateur
     `element` | [JQuery Selector](https://api.jquery.com/category/selectors/) of the element you want to describe / click
     `placement` | Placement of the text box relative to the selected element
     `preclick` or `postclick` | Elements that recieve a click() event before (`preclick`) or after (`postclick`) the step is shown
