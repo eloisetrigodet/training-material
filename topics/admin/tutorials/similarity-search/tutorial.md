@@ -13,14 +13,16 @@ Le programme STOCeps (Suivi Temporel Oiseaux Communs_Echantillonnages Ponctuels 
 >
 > In this tutorial, we will deal with:
 >
-> 1. TOC
+> 1. Chargement des fichiers
+> 2. Analyses
+> 3. Création des graphiques 
+> 4. Workflow
 > {:toc}
 >
 {: .agenda}
 
 # Part 1
-
-Introduction about this part
+Chargement des fichiers 
 
 ## Subpart 1
 
