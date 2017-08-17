@@ -32,14 +32,54 @@ La fenêtre « **Téléverser depuis le web ou à partir de votre pc** » s'
 > 1. Outil "Filtrer des données sur une colonne en utilisant des expressions simples"
 
 Il permet de créer une fichier tabulé avec les données pour une espèce (Exemple ici pour ALAARV).
+
+> 2. Ce qui est fait 
+
 Pour sélectionner que les lignes mentionnant l'espèce ALAARV dans la troisième colonne du jeu de données, il faut utiliser la condition suivante : c3=='ALAARV'.
 
-> 2. 
+### :pencil2: Obtenir le nombre de carrés STOC par année pour l'espèce ALAARV et pour toutes les espèces
+>
+> 1. Outil "Compter le nombre d'occurrences de chaque enregistrement"
+
+Il compte les occurrences de valeurs uniques dans la(les) colonne(s) sélectionnée(s)".
+
+> 2. Ce qui est fait 
+
+Il permet d'obtenir le nombre de carrés STOC par année pour toutes les espèces ou pour une espèce (ex : ALAARV). Il suffit d'indiquer le champ dans lequel on veut compter les termes dans « Select/Unselect all ».
+
+### :pencil2: Joindre le nombre de carrés STOC par année pour toutes les espèces et pour l'espèce ALAARV en une table
+
+> 1. Outil "Joindre les lignes de deux jeux de données l'un à côté de l'autre par un champ spécifique"
+
+Cet outil joint les lignes de deux jeux de données par un champ spécifique. 
+
+> 2. Ce qui est fait 
+
+Il joint le nombre de carrés STOC par année pour toutes les espèces avec le nombre de carrés STOC par année pour l'espèce ALAARV pour le champ année.
+
+### :pencil2: Trier les colonnes
+
+> 1. Outil "Couper des colonnes d'un jeu de données tabulé"
+
+Cet outil joint les lignes de deux jeux de données par un champ spécifique. 
+
+> 2. Ce qui est fait 
+
+Il joint le nombre de carrés STOC par année pour toutes les espèces avec le nombre de carrés STOC par année pour l'espèce ALAARV pour le champ année.
+
+
+
+
+
+
+
+
+
+
 
 # Création des graphiques
 # Workflow 
 
-Short introduction about this subpart.
 
 > ### :pencil2: Hands-on: Data upload
 >
