@@ -91,21 +91,27 @@ Il a permis de convertir le champ année en commentaire pour que la somme soit e
 
 > 1. Outil "Grouper des données par une colonne et pratiquer des opérations d'agrégation sur d'autres colonnes"
 
-Cet outil travaille ligne après ligne sur la donnée spécifiée en entrée et remplace le texte correspondant aux patterns d'expression régulière rentrés par la correspondance proposée. Cet outil utilise les expressions régulières du language de programmation python.
+Il permet de grouper les jeux de données d'entrée par une colonne particulière et d'appliquer des fonctions d'agrégation. 
 
 > 2. Ce qui est fait 
 
-Il a permis de convertir le champ année en commentaire pour que la somme soit effectuée uniquement sur le nombre d'individus.
+Il permet d'effectuer une somme entre les abondances pour une année. 
 
+### :pencil2: Obtenir les fichiers des variations annuelles par espèce et de la tendance globale par espèce
 
+ Avec l'outil "STOCeps Création des fichiers des variations annuelles par espèces et de la tendance globale par espèce".
+ 
+ Il permet d'obtenir les fichiers :
+ 
+> 1. variations annuelles par espèce
 
+Ce fichier contient les sorties et les interprétations du modèle statistique qui permet de voir les variations inter-annuelles d'abondance des populations d'oiseaux pour chaque espèce. 
+Avec ce jeux de données, l'outil "Filtrer des données sur une colonne en utilisant des expressions simples" permet de sélectionner les informations sur l'espèce voulu (ici l'espèce ALAARV) pour créer le graphique "Variation d'abondance pour l'espèce ALAARV". 
+Il faut indiquer la condition : c2=='ALAARV'.
 
+> 2. tendance globale par espèce
 
-
-
-
-
-
+Ce fichier contient les sorties et ses interprétations du modèle statistique qui permet d'avoir la tendance globale de la variation d'abondance sur l'ensemble de la période de temps de l'espèce considérée.
 
 # Création des graphiques
 # Workflow 
