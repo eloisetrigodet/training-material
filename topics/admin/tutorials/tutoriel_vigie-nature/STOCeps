@@ -67,6 +67,36 @@ Cet outil joint les lignes de deux jeux de données par un champ spécifique.
 
 Il joint le nombre de carrés STOC par année pour toutes les espèces avec le nombre de carrés STOC par année pour l'espèce ALAARV pour le champ année.
 
+### :pencil2: Convertir le champ année en commentaire
+
+> 1. Outil "Trouver et Remplacer des patterns dans des colonnes en utilisant des expressions régulières (regex)"
+
+Cet outil travaille ligne après ligne sur la donnée spécifiée en entrée et remplace le texte correspondant aux patterns d'expression régulière rentrés par la correspondance proposée. Cet outil utilise les expressions régulières du language de programmation python.
+
+> 2. Ce qui est fait 
+
+Il a permis de convertir le champ année en commentaire pour que la somme (présenté partie 7) soit effectuée uniquement sur le nombre d'individus.
+
+### :pencil2: Additionner les abondances pour une année
+
+> 1. Outil "Trouver et Remplacer des patterns dans des colonnes en utilisant des expressions régulières (regex)"
+
+Cet outil travaille ligne après ligne sur la donnée spécifiée en entrée et remplace le texte correspondant aux patterns d'expression régulière rentrés par la correspondance proposée. Cet outil utilise les expressions régulières du language de programmation python.
+
+> 2. Ce qui est fait 
+
+Il a permis de convertir le champ année en commentaire pour que la somme soit effectuée uniquement sur le nombre d'individus.
+
+### :pencil2: Additionner les abondances pour une année
+
+> 1. Outil "Grouper des données par une colonne et pratiquer des opérations d'agrégation sur d'autres colonnes"
+
+Cet outil travaille ligne après ligne sur la donnée spécifiée en entrée et remplace le texte correspondant aux patterns d'expression régulière rentrés par la correspondance proposée. Cet outil utilise les expressions régulières du language de programmation python.
+
+> 2. Ce qui est fait 
+
+Il a permis de convertir le champ année en commentaire pour que la somme soit effectuée uniquement sur le nombre d'individus.
+
 
 
 
