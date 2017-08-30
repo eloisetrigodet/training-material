@@ -112,8 +112,30 @@ Il faut indiquer la condition : c2=='ALAARV'.
 > 2. tendance globale par espèce
 
 Ce fichier contient les sorties et ses interprétations du modèle statistique qui permet d'avoir la tendance globale de la variation d'abondance sur l'ensemble de la période de temps de l'espèce considérée.
+L'outil doit être exécuté avec les deux jeux de données : « variations annuelles par espèce » et « tendance globale par espèce ».
+
+### :pencil2: Obtenir les fichiers des variations annuelles par groupe de spécialistes, de la tendance globale par groupe de spécialistes et des informations relatives au calcul de l'indicateur par groupe de spécialistes
+
+Avec l'outil "STOCeps2 Création des fichiers des variations annuelles par groupe de spécialiste et de la tendance globale par groupe de spécialiste"
+
+Il permet d'obtenir les fichiers :
+ 
+> 1. variations annuelles par groupe de spécialistes
+Ce fichier contient les variations inter-annuelles d'abondance par groupe de spécialistes par habitats. Un indice annuel correspond à la moyenne géométrique des indices annuels des espèces spécialistes du groupe.
+Avec ce jeu de données, l'outil "Filtrer des données sur une colonne en utilisant des expressions simples" permet de sélectionner les informations sur le groupe de spécialistes voulu (généralistes, milieux agricoles, milieux bâtis et milieux forestiers).
+Après cela, il faut utiliser l'outil « Joindre les lignes de deux jeux de données l'un à côté de l'autre par un champ spécifique » pour joindre côte à côte les informations de variation d'abondance sur les groupes. Ce jeu de données permet de créer le graphique "Variation d'abondances au cours du temps par groupe de spécialistes".
+
+> 2. tendance globale par groupe de spécialistes
+Ce fichier contient les sorties du modèle statistique qui permet d'avoir la tendance globale de la variation d'abondance sur l'ensemble de la période de temps des groupes de spécialistes. 
+Le modèle utilisé est une régression linéaire des abondances relatives en fonction du temps.
+
+> 3. informations relatives au calcul de l'indicateur par groupe de spécialistes
+Ce fichier contient le détail des poids attribués à chaque espèce et chaque année dans le calcul de l'indicateur par groupe de spécialistes. 
+En effet, l'effectif de certaines espèces étant trop faible pour avoir une bonne estimation de leur abondance relative, un poids leur est attribué.
 
 # Création des graphiques
+Il faut cliquer sur "visualisation" et sur "chart".
+
 # Workflow 
 
 
