@@ -137,46 +137,12 @@ En effet, l'effectif de certaines espèces étant trop faible pour avoir une b
 Il faut cliquer sur "visualisation" et sur "chart".
 
 # Workflow 
+Sur Galaxy-E, il est possible de créer un workflow pour automatiser toutes les étapes de traitement des bases de données. 
+Un workflow est la description d'une suite de tâches permettant un enchaînement automatisé de différentes opérations et étapes. 
+Sur Galaxy-E, il est possible de créer un workflow pour automatiser toutes les étapes de traitement des jeux de données. 
+Quand ce workflow est lancé avec un jeu de données STOCeps, il permet d'obtenir les jeux de données servants à la création des graphiques.
 
-
-> ### :pencil2: Hands-on: Data upload
->
-> 1. Step1
-> 2. Step2
->
 >    > ### :nut_and_bolt: Comments
->    > A comment
+>    > Pour extraire un workflow, il faut cliquer sur les « options de l'historique » puis « extraire un Workflow ».
+>    > Dans « workflow », il est possible de modifier manuellement son workflow ou de l'exécuter sur un jeu de données/fichier audio en appuyant sur « run ».
 >    {: .comment}
->
->    > ### :bulb: Tip: A tip
->    >
->    > * Step1
->    > * Step2
->    {: .tip}
-{: .hands_on}
-
-## Subpart 2
-
-Short introduction about this subpart.
-
-> ### :pencil2: Hands-on: Data upload
->
-> 1. Step1
-> 2. Step2
-
-Some blabla
-> ### :pencil2: Hands-on: Data upload
->
-> 1. Step1
-> 2. Step2
-> 3. Step3
-{: .hands_on}
-
-# Part 2
-
-Short introduction about this subpart.
-
-> ### :nut_and_bolt: Comment
->
-> Do you want to learn more about the principles behind mapping? Follow our [training](../../NGS-mapping)
-> {: .comment}
